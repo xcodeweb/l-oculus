@@ -1,0 +1,25 @@
+.equipment {
+  margin-bottom: 100px;
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  &__box-img {
+    vertical-align: baseline;
+    margin-bottom: 10px;
+  }
+}
+
+.equipment__box-item {
+  &:nth-child(1) {
+    grid-row: 1 / 4;
+  }
+}
+

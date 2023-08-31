@@ -1,0 +1,4 @@
+@import '../scss/mixins/_font-face.scss';
+@include font("Helvetica", "helvetica_bold", "700", "normal");
+@include font("Helvetica", "helvetica_regular", "400", "normal");
+@include font("Inter", "Inter-Bold", "700", "normal");

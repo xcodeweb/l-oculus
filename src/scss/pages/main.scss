@@ -1,0 +1,83 @@
+@import "../fonts";
+@import "../vars";
+@import "../layout";
+@import "../global";
+
+// Page elements
+@import "../components/nav";
+
+// Page sections
+@import "../sections/header";
+@import "../sections/top";
+@import "../sections/features";
+@import "../sections/games";
+@import "../sections/buy";
+@import "../sections/equipment";
+@import "../sections/promo";
+@import "../sections/accessories";
+@import "../sections/contacts";
+@import "../sections/footer";
+
+// Page styles
+
+.body {
+  font-family: "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #5c5c5e;
+}
+
+// TEXT
+.section-title {
+  text-transform: uppercase;
+}
+
+.section-text {
+  text-transform: uppercase;
+  font-size: 36px;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+// End TEXT
+
+// Buy btn
+.buy-btn {
+  display: flex;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  span {
+    padding-right: 111px;
+    padding-left: 111px;
+  }
+
+  &__text {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    color: #f6f4f5;
+    background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  }
+
+  &__price {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
+    background-color: #fff;
+  }
+}
+// End buy btn
+
+// Item border
+.item-border {
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
+}
+// End item border
+
+// Adaptive
+@import "../adaptive";

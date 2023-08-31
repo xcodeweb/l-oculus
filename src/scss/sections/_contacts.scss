@@ -1,0 +1,60 @@
+.contacts {
+  margin-bottom: 100px;
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    max-width: 600px;
+    margin-bottom: 10px;
+  }
+
+  &__content {
+    font-size: 13px;
+  }
+
+  &__email {
+    align-self: end;
+  }
+}
+
+.form {
+  display: flex;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #cacad6;
+
+  &__input {
+    flex-grow: 1;
+    font-size: 13px;
+    outline: none;
+
+    &::placeholder {
+      font-family: "Helvetica", sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      color: #cacad6;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #5c5c5e;
+    background-color: #cacad6;
+  }
+}

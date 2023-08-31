@@ -1,0 +1,68 @@
+.games {
+  padding-bottom: 50px;
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.games__descr {
+  padding-right: 10px;
+
+  &-title {
+    margin-bottom: 10px;
+  }
+
+  &-text {
+    margin-bottom: 30px;
+  }
+}
+
+.games__link {
+  display: inline-block;
+  padding: 14px 47px;
+  font-weight: 700;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%) 1;
+  background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.games__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+
+  &-img {
+    max-height: 276px;
+    margin-bottom: 10px;
+  }
+
+  &-title {
+    align-self: start;
+    margin-bottom: 7px;
+    font-size: 24px;
+    color: #000;
+  }
+
+  &-text {
+    margin-bottom: 30px;
+  }
+
+  &-link {
+    align-self: start;
+    margin-top: auto;
+    background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

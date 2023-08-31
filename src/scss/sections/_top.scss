@@ -1,0 +1,26 @@
+.top {
+  min-height: calc(100vh - 81px);
+  padding-top: 230px;
+  padding-bottom: 50px;
+  background-image: url("@img/top/background.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 96px;
+  }
+
+  &__subtitle {
+    margin-bottom: 5px;
+    font-size: 36px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 13px;
+  }
+}
+
+

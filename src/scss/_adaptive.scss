@@ -1,0 +1,69 @@
+// Media 992
+@media (max-width: 992px) {
+  .tabs {
+    display: block;
+
+    &__btn {
+      margin-bottom: 20px;
+    }
+  }
+
+  .tabs__content {
+    &-item {
+      width: 100%;
+    }
+
+    &-img {
+      width: 100%;
+    }
+  }
+}
+// End media 992
+
+// Media 768
+@media (max-width: 768px) {
+  .top {
+    &__title {
+      font-size: 66px;
+    }
+
+    &__subtitle {
+      font-size: 24px;
+    }
+  }
+}
+// End media 768
+
+
+// Media 630
+@media (max-width: 630px) {
+  .top {
+    text-align: center;
+  }
+
+  .buy-btn {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+
+    span {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+// End media 630
+
+// Media 568
+@media (max-width: 568px) {
+  .top {
+    padding-top: 115px;
+
+    &__title {
+      font-size: 42px;
+    }
+  }
+}
+// End media 568

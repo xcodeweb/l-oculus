@@ -1,0 +1,43 @@
+.buy {
+  position: relative;
+  padding-top: 100px;
+  margin-bottom: 110px;
+  text-align: center;
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%);
+    animation: marquee 6s linear infinite;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 400px;
+    opacity: 0.1;
+    background: linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__img {
+    margin-bottom: 30px;
+  }
+
+  .buy-btn {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100vw) translateY(-50%);
+  }
+
+  to {
+    transform: translateX(calc(-100vw - 50%)) translateY(-50%);
+  }
+}
