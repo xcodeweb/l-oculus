@@ -88,6 +88,21 @@
       width: 100%;
     }
   }
+
+  .footer .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .socials {
+      margin: 0 auto;
+    }
+  }
 }
 // End media 992
 
@@ -246,6 +261,15 @@
     &-item {
       margin-bottom: 0;
     }
+  }
+
+  .footer .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer .logo {
+    order: -1;
   }
 }
 // End media 460

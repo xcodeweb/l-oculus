@@ -9,13 +9,13 @@ class Burger {
 
   init() {
     const menuButton = document.querySelector(`.${this.burger}`);
-    menuButton.addEventListener("click", (e) => this.btnActive());
+    menuButton.addEventListener("click", (e) => this.btnAction());
     document.addEventListener("click", (e) => {
       this.close(e);
     });
   }
 
-  btnActive() {
+  btnAction() {
     const menu = document.querySelector(`.${this.modal}`);
     const body = this.body;
 
@@ -31,7 +31,7 @@ class Burger {
   close(e) {
     const menu = document.querySelector(`.${this.modal}`);
     const body = this.body;
-
+    
     if (!e.target.closest(`.${this.menuBody}`) && !e.target.classList.contains(this.burger)) {
       menu.style.display = "none";
       body.style.overflow = "auto";
