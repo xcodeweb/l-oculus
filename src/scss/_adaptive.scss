@@ -102,6 +102,16 @@
       font-size: 24px;
     }
   }
+
+  .contacts {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__email {
+      align-self: start;
+    }
+  }
 }
 // End media 768
 
