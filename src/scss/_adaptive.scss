@@ -1,3 +1,20 @@
+// Media 1024
+@media (max-width: 1024px) {
+  .games {
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__inner {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &__descr {
+      grid-column: 1 / -1;
+      margin-bottom: 20px;
+    }
+  }
+}
+// End media 1024
+
 // Media 992
 @media (max-width: 992px) {
   .features__titles {
@@ -48,7 +65,6 @@
 }
 // End media 768
 
-
 // Media 630
 @media (max-width: 630px) {
   .top {
@@ -93,6 +109,12 @@
 
   .video {
     grid-column: auto;
+  }
+
+  .games {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
   }
 }
 // End media 568
