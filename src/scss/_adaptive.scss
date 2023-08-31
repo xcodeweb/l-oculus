@@ -1,3 +1,28 @@
+// Media 1220
+@media (max-width: 1220px) {
+  .equipment__box {
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .equipment__box-item {
+    &:nth-child(1) {
+      grid-row: auto;
+    }
+
+    &:nth-child(3) {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .equipment__box-img {
+    width: 100%;
+  }
+}
+// End media 1220
+
 // Media 1024
 @media (max-width: 1024px) {
   .games {
@@ -85,6 +110,20 @@
   }
 }
 // End media 630
+
+// Media 600
+@media (max-width: 600px) {
+  .equipment__box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .equipment__box-item:nth-child(3) {
+    position: static;
+    order: -1;
+  }
+}
+// End media 600
 
 // Media 568
 @media (max-width: 568px) {
