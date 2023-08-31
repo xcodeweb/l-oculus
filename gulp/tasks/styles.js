@@ -65,7 +65,7 @@ export const scss = () => {
         ])
       )
     )
-    .pipe(app.plugins.if(app.isDev, sourcemaps.write()))
+    // .pipe(app.plugins.if(app.isDev, sourcemaps.write()))
     .pipe(app.plugins.if(app.isBuild, groupQueries()))
     .pipe(app.plugins.if(app.config.minifyCss, cleanCss()))
     .pipe(

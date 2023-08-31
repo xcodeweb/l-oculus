@@ -93,6 +93,10 @@
 
 // Media 768
 @media (max-width: 768px) {
+  .header .logo {
+    padding-left: 20px;
+  }
+
   .top {
     &__title {
       font-size: 66px;
@@ -117,6 +121,25 @@
 
 // Media 630
 @media (max-width: 630px) {
+  .header .nav {
+    grid-template-columns: repeat(3, auto);
+    .logo {
+      grid-column: 1 / 2;
+      padding-left: 0;
+    }
+
+    .menu {
+      grid-column: 2 / 3;
+      grid-row: 1;
+      padding-left: 20px;
+    }
+
+    .basket {
+      padding-left: 20px;
+      grid-column: 3 / 4;
+    }
+  }
+
   .top {
     text-align: center;
   }
@@ -185,6 +208,29 @@
 
 // Media 460
 @media (max-width: 460px) {
+  .header .nav {
+    grid-template-columns: repeat(2, auto);
+
+    .logo {
+      justify-self: start;
+    }
+
+    .menu-btn {
+      display: block;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      justify-self: end;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .basket {
+      display: none;
+    }
+  }
+
   .features__titles {
     flex-direction: column;
   }
