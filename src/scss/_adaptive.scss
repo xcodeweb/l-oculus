@@ -1,10 +1,24 @@
 // Media 992
 @media (max-width: 992px) {
+  .features__titles {
+    margin-bottom: 20px;
+  }
+
   .tabs {
     display: block;
 
     &__btn {
       margin-bottom: 20px;
+    }
+  }
+
+  .tabs__btn {
+    display: block;
+    column-count: 2;
+
+    &-item {
+      display: block;
+      text-align: left;
     }
   }
 
@@ -65,5 +79,41 @@
       font-size: 42px;
     }
   }
+
+  .tabs__btn-item {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+  }
+
+  .tabs__content-item {
+    grid-template-columns: 1fr;
+  }
+
+  .video {
+    grid-column: auto;
+  }
 }
 // End media 568
+
+// Media 460
+@media (max-width: 460px) {
+  .features__titles {
+    flex-direction: column;
+  }
+
+  .features__title {
+    flex-basis: auto;
+  }
+
+  .tabs__btn {
+    display: flex;
+    gap: 20px;
+
+    &-item {
+      margin-bottom: 0;
+    }
+  }
+}
+// End media 460
